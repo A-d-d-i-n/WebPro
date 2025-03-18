@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppedia - Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #5CB338;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2d572c;
+            padding: 15px 30px;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffde59;
+        }
+        .search-bar {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url('https://source.unsplash.com/1600x900/?shopping,mall') no-repeat center center/cover;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ffde59;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ffab00;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .footer h2 {
+            margin-bottom: 15px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Shoppedia</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <input type="text" class="search-bar" placeholder="Search for products...">
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Welcome to Shoppedia</h1>
+        <p>The best website for online shopping.</p>
+        <a href="#" class="btn">Start Shopping!</a>
+    </section>
+
+    <!-- FOOTER (CONTACT SECTION) -->
+    <footer class="footer">
+        <h2>Contacts</h2>
+        <p>Email: shoppedia@email.com</p>
+        <p>Instagram: @shoppediaofficial</p>
+        <p>LinkedIn: linkedin.com/in/shoppedia</p>
+        <p>Phone: +123 456 7890</p>
+    </footer>
+
+</body>
+</html>
